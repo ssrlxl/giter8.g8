@@ -1,8 +1,23 @@
 // give the user a nice default project!
+lazy val root = project.in(file("."))
+
+name := "$name$"
+
+version := "$version$"
+
+scalaVersion := "$scalaVersion$"
+
+organization := "$organization$"
 
 
 initialCommands in console := """println("Hello from console")"""
 initialCommands in consoleQuick := """println("Hello from consoleQuick")"""
 
-libraryDependencies ++= Seq("ch.qos.logback" %  "logback-classic" % "1.1.7",
-							"com.typesafe.scala-logging" %% "scala-logging" % "3.5.0")
+libraryDependencies ++= Seq()
+libraryDependencies ++= {
+	val scalaLoggingVersion = "$scalaLoggingVersion$"
+	Seq(
+  		"ch.qos.logback" %%  "logback-classic" % "1.1.7",
+		"com.typesafe.scala-logging" %% "scala-logging" % scalaLoggingVersion
+)
+}
