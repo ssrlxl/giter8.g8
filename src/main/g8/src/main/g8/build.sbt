@@ -3,11 +3,7 @@ lazy val root = project.in(file("."))
 
 name := "$name$"
 
-version := "$version$"
 
-scalaVersion := "$scalaVersion$"
-
-organization := "$organization$"
 
 
 initialCommands in console := """println("Hello from console")"""
