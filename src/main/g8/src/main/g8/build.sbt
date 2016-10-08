@@ -13,7 +13,7 @@ organization := "$organization$"
 initialCommands in console := """println("Hello from console")"""
 initialCommands in consoleQuick := """println("Hello from consoleQuick")"""
 
-libraryDependencies ++= Seq()
+
 libraryDependencies ++= {
 	val scalaLoggingVersion = "$scalaLoggingVersion$"
 	Seq(
