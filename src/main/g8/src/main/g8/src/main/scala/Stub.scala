@@ -1,9 +1,10 @@
 import com.typesafe.scalalogging._
 
-object HellWorld extend App{
-	def main(args:Array[String]):Unit = {
+object HelloWorld extends App{
+	override def main(args:Array[String]):Unit = {
 		println("HelloWorld")
-		val logger = Logger(LoggerFactory.getLogger("name"))
+		val logger = Logger(("name"))
 		logger.debug("HelloWorld")
+		logger.info("helloWorld")
 	}
 }
