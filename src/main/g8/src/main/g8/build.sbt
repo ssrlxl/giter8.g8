@@ -18,6 +18,7 @@ libraryDependencies ++= {
 	val scalaLoggingVersion = "$scalaLoggingVersion$"
 	Seq(
   		"ch.qos.logback" %  "logback-classic" % "1.1.7",
-		"com.typesafe.scala-logging" %% "scala-logging" % scalaLoggingVersion
+			"com.typesafe.scala-logging" %% "scala-logging" % scalaLoggingVersion,
+			"com.typesafe" % "config" % "$configVersion$"
 )
 }
